@@ -1,136 +1,112 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Informasi</title>
 </head>
 <body>
-<header>
-    <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PPW B</h1>
-    <p>ini adalah halaman utama sistem informasi</p>
-    <img src="logo.jpg" alt="logo sistem informasi" width="200" height="150">
-</header>
+    <header>
+        <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PPW B</h1>
+        <p>Ini adalah halaman utama sistem informasi</p>
+        <img src="logo.jpg" alt="logo sistem informasi" width="200" height="150">
+    </header>
 
-<hr>
-<nav>
-    <ul>
-        <li>
-            <a href="#informasi ">
-                Informasi Aplikasi
-            </a>
-        </li>
-
-        <li>
-            <a href="#daftar-mahasiswa">
-            Daftar Mahasiswa
-            </a>
-        </li>
-
-        <li>
-            <a href="#form-tambah">
-                Tambah Mahasiswa Baru
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<hr>
-<main>
-    <section>
-        id ="informasi"
-        <h2>
-            Informasi Sistem
-        </h2>
-            <p>
-                Ini adalah halaman informasi tentang sistem informasi data mahasiswa.
-                <articel>
-                    <h3>
-                        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    </h3>
-                </articel>
-            </p>
-    </section>
     <hr>
-    <section>
-        id="daftar-mahasiswa"
-        <h2>
-            Daftar Mahasiswa Aktif
-            <p>
-                lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Foto</th>
-                            <th>NPM</th>
-                            <th>Nama Lengkap</th>
-                            <th>Program Studi</th>
-                            <th>Angkatan</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Foto1</td>
-                            <td>2411111111</td>
-                            <td>Nama Mahasiswa 1</td>
-                            <td>Program Studi 1</td>
-                            <td>2024</td>
-                            <td>email@example3.com</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Foto2</td>
-                            <td>2411111112</td>
-                            <td>Nama Mahasiswa 2</td>
-                            <td>Program Studi 2</td>
-                            <td>2024</td>
-                            <td>email@example2.com</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Foto3</td>
-                            <td>2411111113</td>
-                            <td>Nama Mahasiswa 3</td>
-                            <td>Program Studi 3</td>
-                            <td>2024</td>
-                            <td>email@example1.com</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </p>
-        </h2>
-    </section>
-    <hr>
-    <section>
-        id="form-tambah"
-        <h2>
-            Tambah Mahasiswa
-        </h2>
-        <p>
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-        </p>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>
-                    Formulir Pendaftaran Mahasiswa
-                </legend>
-                <p>
-                    <label for="">npm</label>
-                    <br>
-                    <input type="text" name="npm" id="npm" placeholder="Masukkan NPM">
-                </p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>>
-            </fieldset>
-        </form>
+    
+    <nav>
+        <ul>
+            <li><a href="#informasi">Informasi Aplikasi</a></li>
+            <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#form-tambah">Tambah Mahasiswa Baru</a></li>
+        </ul>
+    </nav>
 
-    </section>
-</main>
+    <hr>
+    
+    <main>
+        <!-- Perbaikan: atribut id masuk ke dalam tag section -->
+        <section id="informasi">
+            <h2>Informasi Sistem</h2>
+            <p>Ini adalah halaman informasi tentang sistem informasi data mahasiswa.</p>
+            <!-- Perbaikan: Typo articel menjadi article -->
+            <article>
+                <h3>Detail Informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </article>
+        </section>
+
+        <hr>
+        
+        <section id="daftar-mahasiswa">
+            <h2>Daftar Mahasiswa Aktif</h2>
+            <p>Berikut adalah data mahasiswa yang terdaftar:</p>
+            <!-- Perbaikan: Tabel dikeluarkan dari tag judul dan diberi atribut standar -->
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>NPM</th>
+                        <th>Nama Lengkap</th>
+                        <th>Program Studi</th>
+                        <th>Angkatan</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Foto1</td>
+                        <td>2411111111</td>
+                        <td>Nama Mahasiswa 1</td>
+                        <td>Program Studi 1</td>
+                        <td>2024</td>
+                        <td>email@example3.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Foto2</td>
+                        <td>2411111112</td>
+                        <td>Nama Mahasiswa 2</td>
+                        <td>Program Studi 2</td>
+                        <td>2024</td>
+                        <td>email@example2.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Foto3</td>
+                        <td>2411111113</td>
+                        <td>Nama Mahasiswa 3</td>
+                        <td>Program Studi 3</td>
+                        <td>2024</td>
+                        <td>email@example1.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        
+        <section id="form-tambah">
+            <h2>Tambah Mahasiswa</h2>
+            <p>Silakan lengkapi data mahasiswa baru di bawah ini:</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulir Pendaftaran Mahasiswa</legend>
+                    <p>
+                        <!-- Perbaikan: label for disamakan dengan id input -->
+                        <label for="npm">Nomor Pokok Mahasiswa (NPM)</label>
+                        <br>
+                        <input type="text" name="npm" id="npm" placeholder="Contoh: 2315061118" required pattern="[0-9]{8,12}">
+                    </p>
+                    <p>
+                        <button type="submit">Simpan Data Mahasiswa</button>
+                        <button type="reset">Reset Formulir</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
